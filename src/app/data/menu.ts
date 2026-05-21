@@ -16,7 +16,7 @@ export const MENU_ITEMS: MenuItem[] = [
     id: "2",
     name: "Hot milo",
     price: 70,
-    category: "Hot Beve rages",
+    category: "Hot Beverages",
   },
   {
     id: "3",
