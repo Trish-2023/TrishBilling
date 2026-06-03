@@ -30,16 +30,16 @@ export default function Invoice() {
     if (!order) return;
 
     const invoiceText = `
-🧾 INVOICE - ${order.id}
-📅 ${order.date} | ⏰ ${order.time}
+INVOICE - ${order.id}
+Date: ${order.date} | Time: ${order.time}
 
 ${order.items.map((item) => `${item.name} x${item.quantity} - ₹${item.price * item.quantity}`).join("\n")}
 
-━━━━━━━━━━━━━━━━━━
-💰 TOTAL: ₹${order.total}
-━━━━━━━━━━━━━━━━━━
+--------------------
+TOTAL: ₹${order.total}
+--------------------
 
-Thank you for your order! 
+Thank you for your order!
     `;
 
     if (navigator.share) {
@@ -110,47 +110,55 @@ Thank you for your order!
       {/* Invoice */}
       <div className="container mx-auto px-4 py-6 max-w-2xl">
         <Card className="p-8" ref={invoiceRef}>
-          {/* Header */}
-          <div className="text-center mb-8">
-            <h1 className="text-3xl font-bold mb-2"> Trish Billing</h1>
-            <p className="text-muted-foreground">Tax Invoice</p>
+          {/* Logo */}
+          <div className="text-center mb-3">
+            <img 
+              src="/logo-bw.png" 
+              alt="Trish Fast Cuisine Logo" 
+              className="h-16 mx-auto mb-2"
+            />
           </div>
 
-          <Separator className="mb-6" />
+          {/* Header */}
+          <div className="text-center mb-4">
+            <p className="text-muted-foreground text-sm font-semibold">TAX INVOICE</p>
+          </div>
+
+          <Separator className="mb-4" />
 
           {/* Order Info */}
-          <div className="grid grid-cols-2 gap-4 mb-6">
+          <div className="grid grid-cols-2 gap-4 mb-4">
             <div>
-              <p className="text-sm text-muted-foreground">Order ID</p>
-              <p className="font-semibold">{order.id}</p>
+              <p className="text-xs text-muted-foreground">Order ID</p>
+              <p className="font-semibold text-sm">{order.id}</p>
             </div>
             <div className="text-right">
-              <p className="text-sm text-muted-foreground">Date & Time</p>
-              <p className="font-semibold">{order.date}</p>
-              <p className="text-sm">{order.time}</p>
+              <p className="text-xs text-muted-foreground">Date & Time</p>
+              <p className="font-semibold text-sm">{order.date}</p>
+              <p className="text-xs">{order.time}</p>
             </div>
           </div>
 
-          <Separator className="mb-6" />
+          <Separator className="mb-4" />
 
           {/* Items Table */}
-          <div className="mb-6">
-            <table className="w-full">
+          <div className="mb-4">
+            <table className="w-full text-sm">
               <thead>
                 <tr className="border-b">
                   <th className="text-left py-2 font-semibold">Item</th>
-                  <th className="text-center py-2 font-semibold w-20">Qty</th>
-                  <th className="text-right py-2 font-semibold w-24">Price</th>
-                  <th className="text-right py-2 font-semibold w-28">Total</th>
+                  <th className="text-center py-2 font-semibold w-16">Qty</th>
+                  <th className="text-right py-2 font-semibold w-20">Price</th>
+                  <th className="text-right py-2 font-semibold w-24">Total</th>
                 </tr>
               </thead>
               <tbody>
                 {order.items.map((item, index) => (
                   <tr key={index} className="border-b">
-                    <td className="py-3">{item.name}</td>
-                    <td className="text-center py-3">{item.quantity}</td>
-                    <td className="text-right py-3">₹{item.price}</td>
-                    <td className="text-right py-3 font-semibold">
+                    <td className="py-2">{item.name}</td>
+                    <td className="text-center py-2">{item.quantity}</td>
+                    <td className="text-right py-2">₹{item.price}</td>
+                    <td className="text-right py-2 font-semibold">
                       ₹{item.price * item.quantity}
                     </td>
                   </tr>
@@ -159,22 +167,22 @@ Thank you for your order!
             </table>
           </div>
 
-          <Separator className="mb-6" />
+          <Separator className="mb-4" />
 
           {/* Total */}
-          <div className="space-y-2">
-            <div className="flex justify-between text-2xl font-bold">
+          <div className="py-2">
+            <div className="flex justify-between text-xl font-bold">
               <span>Grand Total</span>
               <span>₹{order.total.toFixed(2)}</span>
             </div>
           </div>
 
-          <Separator className="my-6" />
+          <Separator className="my-3" />
 
           {/* Footer */}
-          <div className="text-center text-sm text-muted-foreground">
+          <div className="text-center text-xs text-muted-foreground py-2">
             <p>Thank you for your order!</p>
-            <p className="mt-1">Please visit again </p>
+            <p>Please visit again</p>
           </div>
         </Card>
 
