@@ -109,25 +109,25 @@ Thank you for your order!
 
       {/* Invoice */}
       <div className="container mx-auto px-4 py-6 max-w-2xl">
-        <Card className="p-8" ref={invoiceRef}>
+        <Card className="p-6" ref={invoiceRef}>
           {/* Logo */}
-          <div className="text-center mb-3">
+          <div className="text-center mb-2">
             <img 
               src="/logo-bw.png" 
               alt="Trish Fast Cuisine Logo" 
-              className="h-16 mx-auto mb-2"
+              className="h-24 mx-auto"
             />
           </div>
 
           {/* Header */}
-          <div className="text-center mb-4">
-            <p className="text-muted-foreground text-sm font-semibold">TAX INVOICE</p>
+          <div className="text-center mb-3">
+            <p className="text-muted-foreground text-xs font-semibold">TAX INVOICE</p>
           </div>
 
-          <Separator className="mb-4" />
+          <Separator className="mb-3" />
 
           {/* Order Info */}
-          <div className="grid grid-cols-2 gap-4 mb-4">
+          <div className="grid grid-cols-2 gap-4 mb-3">
             <div>
               <p className="text-xs text-muted-foreground">Order ID</p>
               <p className="font-semibold text-sm">{order.id}</p>
@@ -139,26 +139,26 @@ Thank you for your order!
             </div>
           </div>
 
-          <Separator className="mb-4" />
+          <Separator className="mb-3" />
 
           {/* Items Table */}
-          <div className="mb-4">
-            <table className="w-full text-sm">
+          <div className="mb-3">
+            <table className="w-full text-xs">
               <thead>
                 <tr className="border-b">
-                  <th className="text-left py-2 font-semibold">Item</th>
-                  <th className="text-center py-2 font-semibold w-16">Qty</th>
-                  <th className="text-right py-2 font-semibold w-20">Price</th>
-                  <th className="text-right py-2 font-semibold w-24">Total</th>
+                  <th className="text-left py-1 font-semibold">Item</th>
+                  <th className="text-center py-1 font-semibold w-12">Qty</th>
+                  <th className="text-right py-1 font-semibold w-16">Price</th>
+                  <th className="text-right py-1 font-semibold w-20">Total</th>
                 </tr>
               </thead>
               <tbody>
                 {order.items.map((item, index) => (
                   <tr key={index} className="border-b">
-                    <td className="py-2">{item.name}</td>
-                    <td className="text-center py-2">{item.quantity}</td>
-                    <td className="text-right py-2">₹{item.price}</td>
-                    <td className="text-right py-2 font-semibold">
+                    <td className="py-1">{item.name}</td>
+                    <td className="text-center py-1">{item.quantity}</td>
+                    <td className="text-right py-1">₹{item.price}</td>
+                    <td className="text-right py-1 font-semibold">
                       ₹{item.price * item.quantity}
                     </td>
                   </tr>
@@ -167,7 +167,7 @@ Thank you for your order!
             </table>
           </div>
 
-          <Separator className="mb-4" />
+          <Separator className="mb-3" />
 
           {/* Total */}
           <div className="py-2">
