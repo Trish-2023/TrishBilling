@@ -262,7 +262,6 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 180,
     category: "House Special",
   },
-  {
 ];
 
 export const CATEGORIES = Array.from(
