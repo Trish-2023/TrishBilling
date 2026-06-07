@@ -119,13 +119,6 @@ Thank you for your order!
             />
           </div>
 
-          {/* Header */}
-          <div className="text-center mb-3">
-            <p className="text-muted-foreground text-xs font-semibold">TAX INVOICE</p>
-          </div>
-
-          <Separator className="mb-3" />
-
           {/* Order Info */}
           <div className="grid grid-cols-2 gap-4 mb-3">
             <div>
