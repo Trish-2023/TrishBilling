@@ -66,25 +66,25 @@ export const MENU_ITEMS: MenuItem[] = [
     id: "10",
     name: "Chilli Chicken",
     price: 150,
-    category: "Starters",
+    category: "Chilli",
   },
   {
     id: "11",
     name: "Chilli Prawn",
     price: 200,
-    category: "Starters",
+    category: "Chilli",
   },
   {
     id: "12",
     name: "Chilli Paneer",
     price: 150,
-    category: "Starters",
+    category: "Chilli",
   },
   {
     id: "13",
     name: "Chilli Egg",
     price: 130,
-    category: "Starters",
+    category: "Chilli",
   },
 
   // Dragon
@@ -92,13 +92,13 @@ export const MENU_ITEMS: MenuItem[] = [
     id: "14",
     name: "Dragon Chicken",
     price: 200,
-    category: "Starters",
+    category: "Dragon",
   },
   {
     id: "15",
     name: "Dragon Paneer",
     price: 200,
-    category: "Starters",
+    category: "Dragon",
   },
 
   // Manchurian
@@ -106,370 +106,163 @@ export const MENU_ITEMS: MenuItem[] = [
     id: "16",
     name: "Chicken Manchurian",
     price: 150,
-    category: "Starters",
+    category: "Manchurian",
   },
   {
     id: "17",
     name: "Lollypop Manchurian",
     price: 130,
-    category: "Starters",
+    category: "Manchurian",
   },
   {
     id: "18",
     name: "Gopi Manchurian",
     price: 150,
-    category: "Starters",
+    category: "Manchurian",
   },
 {
     id: "19",
     name: "Mushroom Munchurian",
     price: 170,
-    category: "Starters",
+    category: "Manchurian",
   },
+
+  // Pepperfry
   {
     id: "20",
-    name: "Strawberry Thickshake",
-    price: 100,
-    category: "ThickShake",
+    name: "Chicken Pepperfry",
+    price: 160,
+    category: "Pepperfry",
   },
   {
     id: "21",
-    name: "Butterscotch Thickshake",
-    price: 120,
-    category: "ThickShake",
+    name: "Mushroom Pepperfry",
+    price: 180,
+    category: "Pepperfry",
   },
   {
     id: "22",
-    name: "Blackcurrent Thickshake",
-    price: 120,
-    category: "ThickShake",
+    name: "Paneer Pepperfry",
+    price: 150,
+    category: "Pepperfry",
   },
   {
     id: "23",
-    name: "Boost with dates",
-    price: 150,
-    category: "ThickShake",
+    name: "Ginger Chicken",
+    price: 160,
+    category: "Ginger Chicken",
   },
   
-// Panipuri
+// Add on
   {
     id: "24",
-    name: "Panipuri",
-    price: 20,
-    category: "Panipuri",
+    name: "Extra Egg",
+    price: 10,
+    category: "Add on",
   },
   {
     id: "25",
-    name: "Dahi puri",
-    price: 40,
-    category: "Panipuri",
+    name: "Mayo",
+    price: 25,
+    category: "Add on",
   },
   {
     id: "26",
-    name: "Chesse puri",
-    price: 50,
-    category: "Panipuri",
+    name: "Schezwan Sauce",
+    price: 30,
+    category: "Add on",
   },
+
+  // Shawarma
   {
     id: "27",
-    name: "Mayo puri",
-    price: 40,
-    category: "Panipuri",
+    name: "Mini Shawarma Roll",
+    price: 60,
+    category: "Shawarma",
   },
   {
     id: "28",
-    name: "Sweet puri",
-    price: 30,
-    category: "Panipuri",
+    name: "Requral Shawarma Roll",
+    price: 90,
+    category: "Shawarma",
   },
   {
     id: "29",
-    name: "Shawarma puri",
-    price: 50,
-    category: "Panipuri",
+    name: "Special Shawarma Roll",
+    price: 120,
+    category: "Shawarma",
   },
   {
     id: "30",
-    name: "BBQ Dry puri",
-    price: 40,
-    category: "Panipuri",
+    name: "Plate Requral ",
+    price: 150,
+    category: "Shawarma",
   },
-
-// Quickbites
 {
     id: "31",
-    name: "French fries",
-    price: 50,
-    category: "Quickbites",
+    name: "Plate Speacial",
+    price: 200,
+    category: "Shawarma",
   },
   {
     id: "32",
-    name: "Peri Peri fries",
-    price: 80,
-    category: "Quickbites",
+    name: "Peri Peri",
+    price: 20,
+    category: "Add on",
   },
+
+  // 65
   {
     id: "33",
-    name: "Crispy Chicken popcorn",
-    price: 100,
-    category: "Quickbites",
+    name: "Chicken 65 Boneless",
+    price: 120,
+    category: "65",
   },
   {
     id: "34",
-    name: "Crispy Chicken pakoda",
-    price: 100,
-    category: "Quickbites",
+    name: "Paneer 65",
+    price: 150,
+    category: "65",
   },
   {
     id: "35",
-    name: "Chicken samosa",
-    price: 20,
-    category: "Quickbites",
+    name: "Mushroom 65",
+    price: 180,
+    category: "65",
   },
   {
     id: "36",
-    name: "Chicken Cheesy strips",
+    name: "Gopi 65",
     price: 120,
-    category: "Quickbites",
+    category: "65",
   },
   {
     id: "37",
-    name: "Chicken nuggets",
+    name: "Chicken Lollypop",
     price: 100,
+    category: "65"
   },
 
-  // Sandwich
+  // House Special
  {
     id: "38",
-    name: "Veg Cheese toast",
-    price: 60,
-    category: "Sandwich",
+    name: "Chicken Hot wings",
+    price: 150,
+    category: "House Special",
   },
   {
     id: "39",
-    name: "Chicken Cheese toast",
-    price: 100,
-    category: "Sandwich",
+    name: "Chicken Chindamani",
+    price: 180,
+    category: "House Special",
   },
   {
     id: "40",
-    name: "Paneer Cheese toast",
-    price: 100,
-    category: "Sandwich",
+    name: "Butter Garlic Chicken Fried rice",
+    price: 180,
+    category: "House Special",
   },
   {
-    id: "41",
-    name: "Egg scrambled cheese toast",
-    price: 80,
-    category: "Sandwich",
-  },
-  {
-    id: "42",
-    name: "Bread omlet",
-    price: 50,
-    category: "Sandwich",
-  },
-  {
-    id: "43",
-    name: "Murukku sandwich",
-    price: 50,
-    category: "Sandwich",
-  },
-  {
-    id: "44",
-    name: "Murukku chesse sandwich",
-    price: 70,
-    category: "Sandwich",
-  },
-  
-
-// Burger
- {
-    id: "45",
-    name: "Crispy chicken ginger",
-    price: 100,
-    category: "Burger",
-  },
-  {
-    id: "46",
-    name: "Paneer jalapeno",
-    price: 100,
-    category: "Burger",
-  },
-  {
-    id: "47",
-    name: "House special twin tower",
-    price: 150,
-    category: "Burger",
-  },
-  {
-    id: "48",
-    name: "Egg cheese",
-    price: 80,
-    category: "Burger",
-  },
-  {
-    id: "49",
-    name: "Classic chicken",
-    price: 80,
-    category: "Burger",
-  },
-
-  // Momos
-  {
-    id: "50",
-    name: "Veg steam",
-    price: 50,
-    category: "Momos",
-  },
-  {
-    id: "51",
-    name: "Paneer steam",
-    price: 80,
-    category: "Momos",
-  },  
- {
-    id: "52",
-    name: "Corn cheese steam",
-    price: 100,
-    category: "Momos",
-  },
-  {
-    id: "53",
-    name: "Chicken steam",
-    price: 80,
-    category: "Momos",
-  },
-  {
-    id: "54",
-    name: "Veg schezwan fry",
-    price: 80,
-    category: "Momos",
-  },
-  {
-    id: "55",
-    name: "Paneer schezwan fry",
-    price: 100,
-    category: "Momos",
-  },
-  {
-    id: "56",
-    name: "Corn cheese schezwan fry",
-    price: 130,
-    category: "Momos",
-  },
-   {
-    id: "57",
-    name: "Chicken schezwan fry",
-    price: 130,
-    category: "Momos",
-  }, 
-
-  // Rolls&Shawarma
-  {
-    id: "58",
-    name: "Mexian Shawarma",
-    price: 130,
-    category: "Rolls&Shawarma",
-  },
-  {
-    id: "59",
-    name: "Arabian shawarma",
-    price: 130,
-    category: "Rolls&Shawarma",
-  },  
- {
-    id: "60",
-    name: "Chicken kati roll",
-    price: 120,
-    category: "Rolls&Shawarma",
-  },
-  {
-    id: "61",
-    name: "Paneer kati roll",
-    price: 120,
-    category: "Rolls&Shawarma",
-  },
-  {
-    id: "62",
-    name: "Prawn kati roll",
-    price: 160,
-    category: "Rolls&Shawarma",
-  },
-  {
-    id: "63",
-    name: "Plain egg masala roll",
-    price: 50,
-    category: "Rolls&Shawarma",
-  },
-  {
-    id: "64",
-    name: "Crispy chicken wraps",
-    price: 100,
-    category: "Rolls&Shawarma",
-  },
-  {
-    id: "65",
-    name: "Paneer wraps",
-    price: 100,
-    category: "Rolls&Shawarma",
-  },
-{
-    id: "66",
-    name: "Egg Cheese wraps",
-    price: 100,
-    category: "Rolls&Shawarma",
-  }, 
-
-  // Cheeseloadedbox
-  {
-    id: "67",
-    name: "Cheeseloaded fries",
-    price: 150,
-    category: "Cheeseloadedbox",
-  },
-  {
-    id: "68",
-    name: "Chessey chicken fries",
-    price: 200,
-    category: "Cheeseloadedbox",
-  },
-  {
-    id: "69",
-    name: "Chicken lass Mexican chicken",
-    price: 200,
-    category: "Cheeseloadedbox",
-  },{
-    id: "70",
-    name: "Chessy cripsy hot wigs",
-    price: 200,
-    category: "Cheeseloadedbox",
-  },
-  {
-    id: "71",
-    name: "Mini cheese lass fries",
-    price: 120,
-    category: "Cheeseloadedbox",
-  },
-
-// Musttry
-    {
-    id: "72",
-    name: "Thread chicken*",
-    price: 60,
-    category: "Musttry",
-  },{
-    id: "73",
-    name: "Hot BBQ leg fry",
-    price: 70,
-    category: "Musttry",
-  },
-  {
-    id: "74",
-    name: "Crispy chicken cheesy fries",
-    price: 200,
-    category: "Musttry",
-  },
 ];
 
 export const CATEGORIES = Array.from(
