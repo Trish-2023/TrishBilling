@@ -60,69 +60,71 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 200,
     category: "Fried Rice",
   },
+
+  // Chilli
   {
     id: "10",
-    name: "Green apple mojito",
-    price: 70,
-    category: "Mojito",
+    name: "Chilli Chicken",
+    price: 150,
+    category: "Starters",
   },
   {
     id: "11",
-    name: "Strawberry mojito",
-    price: 70,
-    category: "Mojito",
+    name: "Chilli Prawn",
+    price: 200,
+    category: "Starters",
   },
-
-  // MilkShake
   {
     id: "12",
-    name: "Chocolate milkshake",
-    price: 70,
-    category: "MilkShake",
+    name: "Chilli Paneer",
+    price: 150,
+    category: "Starters",
   },
   {
     id: "13",
-    name: "Orio milkshake",
-    price: 90,
-    category: "MilkShake",
+    name: "Chilli Egg",
+    price: 130,
+    category: "Starters",
   },
+
+  // Dragon
   {
     id: "14",
-    name: "Kitkat milkshake",
-    price: 100,
-    category: "MilkShake",
+    name: "Dragon Chicken",
+    price: 200,
+    category: "Starters",
   },
   {
     id: "15",
-    name: "Vanilla milkshake",
-    price: 70,
-    category: "MilkShake",
+    name: "Dragon Paneer",
+    price: 200,
+    category: "Starters",
   },
+
+  // Manchurian
   {
     id: "16",
-    name: "Stawberry milkshake",
-    price: 80,
-    category: "MilkShake",
+    name: "Chicken Manchurian",
+    price: 150,
+    category: "Starters",
   },
   {
     id: "17",
-    name: "Butterscotch milkshake",
-    price: 80,
-    category: "MilkShake",
+    name: "Lollypop Manchurian",
+    price: 130,
+    category: "Starters",
   },
   {
     id: "18",
-    name: "Blackcurrent milkshake",
-    price: 90,
-    category: "MilkShake",
+    name: "Gopi Manchurian",
+    price: 150,
+    category: "Starters",
   },
-
-// ThickShake
 {
     id: "19",
-    name: "Chocolate thickshake",
-    price: 100,
-    category: "ThickShake",
+    name: "Mushroom Munchurian",
+    price: 170,
+    category: "Starters",
   },
   {
     id: "20",
