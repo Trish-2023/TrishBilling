@@ -9,7 +9,7 @@ export const MENU_ITEMS: MenuItem[] = [
   {
     id: "1",
     name: "Chicken fried Rice",
-    price: 130,
+    price: 120,
     category: "Fried Rice",
   },
   {
