@@ -5,7 +5,7 @@ import { MenuItem } from "../types";
 // Simply change the name, price, or add new items to the array
 
 export const MENU_ITEMS: MenuItem[] = [
-  // Hot Beverages
+  // Fried Rice
   {
     id: "1",
     name: "Chicken fried Rice",
@@ -14,55 +14,51 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: "2",
-    name: "Hot milo",
-    price: 70,
-    category: "Hot Beverages",
+    name: "Prawn Fried Rice",
+    price: 200,
+    category: "Fried Rice",
   },
   {
     id: "3",
-    name: "Hot boost",
-    price: 50,
-    category: "Hot Beverages",
+    name: "Egg Fried Rice",
+    price: 90,
+    category: "Fried Rice",
   },
-
-  // Cold Beverages
   {
     id: "4",
-    name: "Cold Coffee",
-    price: 80,
-    category: "Cold Beverages",
+    name: "Paneer Fried Rice",
+    price: 130,
+    category: "Fried Rice",
   },
   {
     id: "5",
-    name: "Cold milo",
-    price: 50,
-    category: "Cold Beverages",
+    name: "Mushroom Fried Rice",
+    price: 130,
+    category: "Fried Rice",
   },
   {
     id: "6",
-    name: "Cold boost",
-    price: 50,
-    category: "Cold Beverages",
+    name: "Gopi Fried Rice",
+    price: 120,
+    category: "Fried Rice",
   },
-
-  // Mojito
   {
     id: "7",
-    name: "Lemon mint mojito",
-    price: 50,
-    category: "Mojito",
+    name: "Veg Fried Rice",
+    price: 80,
+    category: "Fried Rice",
   },
   {
     id: "8",
-    name: "Lichi mojito",
-    price: 70,
-    category: "Mojito",
+    name: "Mixed Veg Fried Rice",
+    price: 150,
+    category: "Fried Rice",
   },
   {
     id: "9",
-    name: "Blackberrry mojito",
-    price: 70,
-    category: "Mojito",
+    name: "Mixed Nonveg Fried Rice",
+    price: 200,
+    category: "Fried Rice",
   },
   {
     id: "10",
